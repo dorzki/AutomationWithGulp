@@ -1,0 +1,27 @@
+{
+  "name": "automation-with-gulp",
+  "version": "1.0.0",
+  "description": "Project base for Automation with Gulp tutorial on https://www.dorzki.co.il",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dorzki/AutomationWithGulp.git"
+  },
+  "keywords": [
+    "automation",
+    "gulp",
+    "dorzki"
+  ],
+  "author": "Dor Zuberi (dorzki)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dorzki/AutomationWithGulp/issues"
+  },
+  "homepage": "https://github.com/dorzki/AutomationWithGulp#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
