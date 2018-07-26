@@ -1,0 +1,11 @@
+// Partials
+@import 'colors';
+
+// Common
+body {
+  background-color: $main-color;
+
+  p {
+    font-size: 18px;
+  }
+}
