@@ -2,12 +2,26 @@
  * Automation with Gulp
  */
 
-// Dependencies
+	// Dependencies
 var gulp = require( 'gulp' );
+var uglify = require( 'gulp-uglify' );
+var concat = require( 'gulp-concat' );
+var sourcemaps = require( 'gulp-sourcemaps' );
+
+// Variables
+var JS_SRC = '__src/js/*.js';
+var JS_VENDOR = '__src/js/vendor/*.js';
+var JS_DIST = 'assets/js';
 
 // Tasks
-gulp.task( 'hello', function () {
+gulp.task( 'build-js', function () {
 
-  console.log( 'Hello World!' );
+	return gulp
+		.src( [ JS_VENDOR, JS_SRC ] )
+		.pipe( sourcemaps.init() )
+		.pipe( uglify() )
+		.pipe( concat( 'scripts.min.js' ) )
+		.pipe( sourcemaps.write( './' ) )
+		.pipe( gulp.dest( JS_DIST ) );
 
 } );
