@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/dorzki/AutomationWithGulp#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-sass": "^4.0.2"
   }
 }

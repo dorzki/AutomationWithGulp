@@ -1,0 +1,33 @@
+// General
+body {
+	background-color: #f8f8f8;
+	font-size: 16px;
+
+	@media (min-width: 768px) {
+		font-size: 20px;
+	}
+
+	@media (min-width: 992px) {
+		font-size: 24px;
+	}
+
+	p {
+		color: #dd03a0;
+		text-transform: uppercase;
+
+		@media (min-width: 768px) {
+			letter-spacing: 10px;
+		}
+
+		strong {
+			font-weight: 900;
+			font-style: italic;
+
+			@media (min-width: 992px) {
+				text-decoration: underline;
+				font-style: normal;
+			}
+		}
+	}
+
+}
